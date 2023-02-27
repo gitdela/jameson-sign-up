@@ -1,6 +1,6 @@
 body {
-    --color-primary: #009579;
-    --color-primary-dark: #007f67;
+    --color-primary: #F9E69E;
+    --color-primary-dark: #1A5039;
     --color-secondary: #252c6a;
     --color-error: #cc3333;
     --color-success: #4bb544;
@@ -17,9 +17,39 @@ body {
     /* background-size: cover; */
 }
 
+.item {
+    flex: 1;
+}
+
+div.item {
+    width: 70%;
+}
+
+/* --------------------------- */
+
+.hero {
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary); /* Change to your desired background color */
+  }
+  
+  .hero-logo-container {
+    max-width: 80%;
+  }
+  
+  .hero-logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  
+
+/* ------------------------------- */
 .container {
-    width: 400px;
-    max-width: 400px;
+    width: 500px;
+    max-width: 500px;
     margin: 1rem;
     padding: 2rem;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
@@ -27,10 +57,30 @@ body {
     background: #fff;
 }
 
-.container,
+.container,N
 .form-input,
 .form-button {
     font: 500 1rem 'Quicksand', sans-serif;
+}
+
+.names {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.name {
+    flex: 1;
+}
+
+.contact {
+    flex: 1;
 }
 
 .form-hidden {
@@ -74,7 +124,7 @@ body {
     box-sizing: border-box;
     border-radius: var(--border-radius);
     border: 1px solid #dddddd;
-    outline: none;
+    outline-color: transparent;
     background: #eeeeee;
     transition: background 0.2s, border-color 0.2s;
 }
@@ -86,6 +136,10 @@ body {
 .form-input-error {
    color: var(--color-error); 
    border-color: var(--color-error);
+}
+
+.message {
+    height: calc(1.5em * 5);
 }
 
 .form-input-error-message {
@@ -101,7 +155,7 @@ body {
     font-size: 1.1rem;
     color: #ffffff;
     border: none;
-    border: var(--border-radius);
+    border-radius: var(--border-radius);
     outline: none;
     cursor: pointer;
     background: var(--color-primary);

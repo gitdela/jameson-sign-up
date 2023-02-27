@@ -11,8 +11,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <form class="form form-hidden" id="login">
+    <section class="hero item">
+        <div class="hero-logo-container">
+          <img src="logo.png" alt="Logo" class="hero-logo">
+        </div>
+      </section>
+      
+    <div class="container item">
+        <!-- <form class="form form-hidden" id="login">
             <h1 class="form-title">Login</h1>
             <div class="form-message form-message-error"></div>
             <div class="form-input-group">
@@ -30,32 +36,44 @@
             <p class="form-text">
                 <a href="./" class="form--link" id="linkCreateAccount">Don't have an account? Create account</a>
             </p>
+        </form> -->
+    
+        <form class="form" id="createAccount">
+            <h1 class="form-title">Leave a Message</h1>
+            <!-- <div class="form-message form-message-error">#</div> -->
+
+<!-- -----------names----------------- -->
+            <div class="names">
+                <div class="form-input-group name">
+                    <input type="text" class="form-input" autofocus placeholder="First Name">
+                    <div class="form-input-error-message"></div>
+                </div>
+                <div class="form-input-group name">
+                    <input type="text" class="form-input" autofocus placeholder="Last Name">
+                    <div class="form-input-error-message"></div>
+                </div>
+            </div>
+
+<!-- ---------------contact--------------- -->
+            <div class="contacts">
+                <div class="form-input-group contact">
+                    <input type="email" class="form-input" autofocus placeholder="Email Address">
+                    <div class="form-input-error-message"></div>
+                </div>
+                <div class="form-input-group contact">
+                    <input type="tel" class="form-input" autofocus placeholder="Phone Number">
+                    <div class="form-input-error-message"></div>
+                </div>
+            </div>
+
+<!-- -------------------message---------------- -->
+            <div class="form-input-group">
+                <textarea type="text" class="form-input message" autofocus placeholder="Message"></textarea>
+            </div>
+            <div class="form-input-error-message"></div>
+            <button class="form-button" type="submit">Send</button>
         </form>
     </div>
-    <form class="form" id="login">
-        <h1 class="form-title">Create Account</h1>
-        <div class="form-message form-message-error"></div>
-        <div class="form-input-group">
-            <input type="text" class="form-input" autofocus placeholder="Username">
-            <div class="form-input-error-message"></div>
-        </div>
-        <div class="form-input-group">
-            <input type="text" class="form-input" autofocus placeholder="Email Address">
-            <div class="form-input-error-message"></div>
-        </div>
-        <div class="form-input-group">
-            <input type="password" class="form-input" autofocus placeholder="Password">
-            <div class="form-input-error-message"></div>
-        </div>
-        <div class="form-input-group">
-            <input type="password" class="form-input" autofocus placeholder="Confirm Password">
-            <div class="form-input-error-message"></div>
-        </div>
-        <button class="form-button" type="submit">Continue</button>
-        <p class="form-text">
-            <a href="./" class="form--link" id="linklogin">Already have an account? Sign in</a>
-        </p>
-    </form>
     <script src="./main.js"></script>
 </body>
 </html>
