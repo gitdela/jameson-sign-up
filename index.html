@@ -4,70 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jameson Log In/Sign Up</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="hero item">
-          <img src="jcard.png" alt="Logo" class="hero-logo">
-    </div>
-      
-    <div class="container item">
-    
-        <form class="form" id="createAccount" onsubmit="sendEmail() reset(); return false;">
-            <h1 class="form-title">Leave a Message</h1>
-            <!-- <div class="form-message form-message-error">#</div> -->
-
-<!-- -----------names----------------- -->
-            <div class="names">
-                <div class="form-input-group name">
-                    <input type="text" class="form-input" autofocus placeholder="First Name">
-                    <div class="form-input-error-message"></div>
-                </div>
-                <div class="form-input-group name">
-                    <input type="text" class="form-input" autofocus placeholder="Last Name">
-                    <div class="form-input-error-message"></div>
-                </div>
+    <main class="container">
+        <div class="content-box">
+            <div class="left"></div>
+            <form class="right">
+                <h2>Get a JCARD</h2>
+                <input type="text" class="field" autofocus placeholder="Name">
+                <input type="tel" class="field" autofocus placeholder="Telephone">
+                <input type="email" class="field" autofocus placeholder="Email">
+                <textarea class="field area" autofocus placeholder="Message"></textarea>
+                <button class="btn">Apply</button>
             </div>
-
-<!-- ---------------contact--------------- -->
-            <div class="contacts">
-                <div class="form-input-group contact">
-                    <input type="email" class="form-input" autofocus placeholder="Email Address">
-                    <div class="form-input-error-message"></div>
-                </div>
-                <div class="form-input-group contact">
-                    <input type="tel" class="form-input" autofocus placeholder="Phone Number">
-                    <div class="form-input-error-message"></div>
-                </div>
-            </div>
-
-<!-- -------------------message---------------- -->
-            <div class="form-input-group">
-                <textarea type="text" class="form-input message" autofocus placeholder="Message"></textarea>
-            </div>
-            <div class="form-input-error-message"></div>
-            <button class="form-button" type="submit">Send</button>
-        </form>
-    </div>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+        </div>
+    </main>
     <script>
-        function sendEmail() {
-            Email.send({
-                Host : "smtp.elasticemail.com",
-                Username : "username",
-                Password : "password",
-                To : 'them@website.com',
-                From : "you@isp.com",
-                Subject : "This is the subject",
-                Body : "And this is the body"
-            }).then(
-            message => alert(message)
-            );
-        }
+
     </script>
 </body>
 </html>
