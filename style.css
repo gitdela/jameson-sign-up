@@ -25,6 +25,7 @@ body {
     width: 100%;
     height: 100%;
     padding: 20px 100px;
+    /* background-image: url(./images/Jcard--03.jpg); */
 /* ------------EDIT BELOW--------- */
 }
 
@@ -36,13 +37,12 @@ body {
     width: 100%;
     height: 100%;
 /* --------------------change this image to change the background--------------------- */
-    background-image: url(./images/Jcard--03.jpg);
     background-size: cover;
     z-index: -1;
     /* filter: blur(50px); */
     animation-name: slideshow;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
+    animation-duration: 40s;
+    animation-iteration-count:infinite;
 }
 
 @keyframes slideshow {
@@ -64,13 +64,12 @@ body {
 }
 
 .content-box {
-    max-width: 1500px;
+    max-width: 80%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
     text-align: center;
-
     box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.9);
 }
 
@@ -81,36 +80,47 @@ body {
 
 .right {
     padding: 35px 60px;
-    background-color: rgba(255, 255, 255, 0.4); /* Set alpha value to 0.5 */
+    background-color: rgba(255, 255, 255, 0.25); /* Set alpha value to 0.5 */
+    min-height: 100%;
 }
 
-h2 {
-    color: var(--color-primary-green);
+
+
+h1 {
+    /* background-image: linear-gradient(to bottom, #0088cc, #003399);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;  */
+    color: #1A5039;
+    font-weight: 900;
     position: relative;
     padding-bottom: 10px;
     margin-bottom: 10px;
 }
 
-h2::after {
+h1::after {
     content: '';
     position: absolute;
     left: 50%;
     bottom: 4px;
     transform: translateX(-50%);
-    height: 4px;
+    height: 8px;
     width: 50px;
     border-radius: 2px;
     background-color: var(--color-primary-green)
+    /* background-color: var(--color-primary-yellow); */
 }
 
 .field {
     width: 100%;
+    height: 4rem;
     padding: 0.5rem 1rem;
     outline: none;
     border: 2px solid rgba(0, 0, 0, 0);
     background-color: rgba(255, 255, 255, 0.6);
     font-size: 1.1rem;
-    margin-bottom: 22px;
+    margin: 18px 0;
     transition: .3s;
     border-radius: var(--border-radius);
 }
@@ -130,9 +140,12 @@ h2::after {
 }
 
 .btn {
-    width: 100%;
+    width: 50%;
+    height: 4rem;
     padding: 0.5rem 1rem;
+    margin-top: 30px;
     font-size: 1.1rem;
+    font-weight: 800;
     color: #fff;
     background-color: var(--color-primary-green);
     cursor: pointer;
@@ -143,41 +156,51 @@ h2::after {
 }
 
 .btn:hover {
-    background-color: var(--color-primary-green);
+    background-color: var(--color-primary-yellow)
 }
 
-@media only screen and (max-width: 1000px) {
-    .container {
-        padding: 0;
+@media only screen and (max-width: 1350px) {
+
+    body {
+        height: auto;
     }
 
-    .right {
-        height: 100%;
-    }
-    
-    .field, .btn {
-        width:100%;
-        height: 5rem;
-        margin-bottom: 50px;
-    }
-
-    
     .content-box {
-        width: 100%;
-        height: 100%;
+        height: 70%;
         display: flex;
         flex-direction: column;
     }
+}
+    /* .container {
+        padding: 0;
+    } */
+
+    /* .right {
+        height: 100%;
+    } */
     
-    .left {
+    /* .field, .btn {
+        width:100%;
+        height: 5rem;
+        margin-bottom: 50px;
+    } */
+
+/*     
+    .content-box {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+    } */
+    
+    /* .left {
         width: 100%;
         background-image: url('./images/jcard-phone.jpg') no-repeat center;
         background-size: cover;
-    }
+    } */
 
-}
-
-@media only screen and (max-width: 541px) {
+/* 
+@media only screen and (min-width: 281px) and (max-width: 541px) {
     .field, .btn {
         width: 90%;
         height: 3rem;
@@ -189,4 +212,4 @@ h2::after {
         width: 100%;
         height: 2rem;
     }
-}
+} */
