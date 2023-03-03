@@ -47,19 +47,19 @@ body {
 
 @keyframes slideshow {
     0% {
-        background-image: url(./images/jmsn_ss_1.JPG);
+        background-image: url(./images/Optimized-jmsn_ss_1.JPG);
     }
     25% {
-        background-image: url(./images/jmsn_ss_2.JPG);
+        background-image: url(./images/Optimized-jmsn_ss_2.JPG);
     }
     50% {
-        background-image: url(./images/jmsn_ss_3.JPG);
+        background-image: url(./images/Optimized-jmsn_ss_3.JPG);
     }
     75% {
-        background-image: url(./images/jmsn_ss_4.JPG);
+        background-image: url(./images/Optimized-jmsn_ss_4.JPG);
     }
     100% {
-        background-image: url(./images/jmsn_ss_5.JPG);
+        background-image: url(./images/Optimized-jmsn_ss_5.JPG);
     }
 }
 
@@ -146,8 +146,8 @@ h1::after {
     margin-top: 30px;
     font-size: 1.1rem;
     font-weight: 800;
-    color: #fff;
-    background-color: var(--color-primary-green);
+    color: var(--color-primary-yellow);
+    background-color: #1A5039;
     cursor: pointer;
     outline: none;
     border: none;
@@ -156,7 +156,8 @@ h1::after {
 }
 
 .btn:hover {
-    background-color: var(--color-primary-yellow)
+    background-color: #ddcd94;
+    color: #1A5039;
 }
 
 
@@ -176,7 +177,7 @@ h1::after {
         width: 100%;
     }
 
-    right. {
+    .right {
         height: 50%;
         padding: 2rem;
     }

@@ -11,17 +11,32 @@
     <main class="container">
         <div class="content-box">
             <img src="./images/j_card_dsktp.jpg" alt="" class="left">
-            <form class="right">
+            <form class="right" action="https://formsubmit.co/interactwdela@gmail.com" method="POST">
                 <h1>Get JCARD</h1>
-                <input type="text" class="field" autofocus placeholder="Name">
-                <input type="tel" class="field" autofocus placeholder="Phone Number">
-                <input type="email" class="field" autofocus placeholder="Email">
-                <button class="btn">Apply</button>
+                <input type="text" name="name" class="field" required autofocus placeholder="Name">
+                <input type="hidden" name="_subject" value="New Application for a J-Card">
+                <input type="hidden" name="_next" value="https://applyjcard.com/thankyou.html">
+                <input type="tel" name="phone" class="field" required autofocus placeholder="Phone Number">
+                <input type="email" name="email" class="field" required autofocus placeholder="Email">
+                <button type="submit" class="btn">Apply</button>
             </div>
         </div>
     </main>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
-
-    </script>
+        function sendEmail() {
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "scriptingdela@gmail.com",
+                Password : "nosba2hmd-sIci2mx",
+                To : 'interactwdela@gmail.com',
+                From : document.getElementById('email').value,
+                Subject : "New J-Card Application",
+                Body : "And this is the body"
+            }).then(
+            message => alert(message)
+            );
+        }
+    </script> -->
 </body>
 </html>
